@@ -1,0 +1,172 @@
+{
+  "report_type": "pdf_text_comparison",
+  "version": "1.0",
+  "status": "changes_found",
+  "old_pdf": "C:\\Users\\srjha\\OneDrive\\Desktop\\pdf-change-agent\\old.pdf",
+  "new_pdf": "C:\\Users\\srjha\\OneDrive\\Desktop\\pdf-change-agent\\new.pdf",
+  "summary": {
+    "old_tokens": 376,
+    "new_tokens": 379,
+    "atomic_changes": 13,
+    "logical_change_groups": 7,
+    "replacements": 7,
+    "deletions": 3,
+    "insertions": 3
+  },
+  "changes": [
+    {
+      "group": 1,
+      "old_pages": "1",
+      "new_pages": "1",
+      "old_context": "usability and customer satisfaction while growing as a valuable documentation professional within the organization. Skills & Tools Writing and Reviewing Skills: • Experience in",
+      "new_context": "usability and customer satisfaction while growing as a valuable documentation professional. Skills & Tools Writing and Reviewing Skills: • Experience in",
+      "atomic_changes": [
+        {
+          "type": "replace",
+          "category": "punctuation_change",
+          "old": "professional",
+          "new": "professional.",
+          "description": "Text changed from 'professional' to 'professional.'."
+        },
+        {
+          "type": "delete",
+          "category": "deletion",
+          "old": "within the organization.",
+          "new": "",
+          "description": "Text was deleted: 'within the organization.'."
+        }
+      ]
+    },
+    {
+      "group": 2,
+      "old_pages": "1",
+      "new_pages": "1",
+      "old_context": "writing end-user documentation such as User Manuals, Maintenance Manuals, Installation Guides. • Ability to organize, develop, edit, and maintain structured documentation",
+      "new_context": "writing end-user documentation such as User Manuals, Maintenance Manuals, Installation Guides, and Online Help content. • Ability to organize, develop, edit, and maintain structured documentation",
+      "atomic_changes": [
+        {
+          "type": "replace",
+          "category": "punctuation_change",
+          "old": "Guides.",
+          "new": "Guides,",
+          "description": "Text changed from 'Guides.' to 'Guides,'."
+        },
+        {
+          "type": "insert",
+          "category": "insertion",
+          "old": "",
+          "new": "and Online Help content.",
+          "description": "Text was inserted: 'and Online Help content.'."
+        }
+      ]
+    },
+    {
+      "group": 3,
+      "old_pages": "1",
+      "new_pages": "1",
+      "old_context": "topic-based content using XML for modular documentation and content reuse. • Experience in proofreading content to ensure accuracy, clarity, consistency, and",
+      "new_context": "topic-based content using XML for modular documentation and content reuse. Experience in proofreading content to ensure accuracy, clarity, consistency, and",
+      "atomic_changes": [
+        {
+          "type": "delete",
+          "category": "symbol_change",
+          "old": "•",
+          "new": "",
+          "description": "Text was deleted: '•'."
+        }
+      ]
+    },
+    {
+      "group": 4,
+      "old_pages": "1",
+      "new_pages": "1",
+      "old_context": "consistency, and adherence to style guidelines. • Followed Microsoft Style Guide and Simplified Technical English (STE) standards while creating and reviewing",
+      "new_context": "consistency, and adherence to style guidelines. • Followed Microsoft Style Guide, and Simplified Technical English (STE) standards while creating and reviewing",
+      "atomic_changes": [
+        {
+          "type": "replace",
+          "category": "punctuation_change",
+          "old": "Guide",
+          "new": "Guide,",
+          "description": "Text changed from 'Guide' to 'Guide,'."
+        }
+      ]
+    },
+    {
+      "group": 5,
+      "old_pages": "1",
+      "new_pages": "1",
+      "old_context": "understanding and usability. Tools & Platforms: Adobe FrameMaker, Microsoft Word, and InDesign. Web Technologies: HTML5, CSS3, JavaScript (basic). Documentation Standards: Microsoft",
+      "new_context": "understanding and usability. Tools & Platforms: Adobe FrameMaker, Microsoft Word, JIRA, Snagit, InDesign. Web Technologies: HTML5, CSS3, JavaScript (basic). Documentation Standards: Microsoft",
+      "atomic_changes": [
+        {
+          "type": "delete",
+          "category": "deletion",
+          "old": "and",
+          "new": "",
+          "description": "Text was deleted: 'and'."
+        },
+        {
+          "type": "insert",
+          "category": "insertion",
+          "old": "",
+          "new": "JIRA, Snagit,",
+          "description": "Text was inserted: 'JIRA, Snagit,'."
+        }
+      ]
+    },
+    {
+      "group": 6,
+      "old_pages": "1",
+      "new_pages": "2",
+      "old_context": "Technical Writer Knowledgeworks Innovative Linguistic Solutions., Bangalore Project: Royal Enfield May 2023 - November 2025 (2+ years) • Authored and managed structured documentation",
+      "new_context": "Technical Writer Knowledgeworks Innovative Linguistic Solutions., Bangalore Project: Royal Enfield user manuals May 2023 – November 2025 (2+ years) • Authored and managed structured documentation",
+      "atomic_changes": [
+        {
+          "type": "insert",
+          "category": "insertion",
+          "old": "",
+          "new": "user manuals",
+          "description": "Text was inserted: 'user manuals'."
+        },
+        {
+          "type": "replace",
+          "category": "symbol_change",
+          "old": "-",
+          "new": "–",
+          "description": "Text changed from '-' to '–'."
+        }
+      ]
+    },
+    {
+      "group": 7,
+      "old_pages": "1, 2",
+      "new_pages": "2",
+      "old_context": "of Engineering (B.E.), Computer Science Engineering • Anna University, Chennai - 2009 - 2013 Certifications • Certificate in Technical Writing - TechTotal • Web Development Foundations DECLARATION I hereby declare that",
+      "new_context": "of Engineering (B.E.), Computer Science Engineering • Anna University, Chennai — 2009 – 2013 Certifications • Certificate in Technical Writing – TechTotal • Web Development Foundations DECLARATION I hereby declare that",
+      "atomic_changes": [
+        {
+          "type": "replace",
+          "category": "symbol_change",
+          "old": "-",
+          "new": "—",
+          "description": "Text changed from '-' to '—'."
+        },
+        {
+          "type": "replace",
+          "category": "symbol_change",
+          "old": "-",
+          "new": "–",
+          "description": "Text changed from '-' to '–'."
+        },
+        {
+          "type": "replace",
+          "category": "symbol_change",
+          "old": "-",
+          "new": "–",
+          "description": "Text changed from '-' to '–'."
+        }
+      ]
+    }
+  ]
+}

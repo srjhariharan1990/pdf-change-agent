@@ -34,10 +34,135 @@ def run_test(name, old_pdf, new_pdf, expected):
     for expected_text in expected:
         if expected_text not in result.stdout:
             print(
-                f"❌ Missing expected result: "
+                f"❌ Missing expected output: "
                 f"{expected_text}"
             )
             return False
+
+    print(f"✅ {name} PASSED")
+    return True
+
+
+def run_json_validation():
+    name = "JSON Report Validation"
+
+    print(f"\n{'=' * 60}")
+    print(f"TEST: {name}")
+    print(f"{'=' * 60}")
+
+    command = [
+        sys.executable,
+        str(
+            PROJECT_FOLDER
+            / "tests"
+            / "validate_json_report.py"
+        ),
+    ]
+
+    result = subprocess.run(
+        command,
+        capture_output=True,
+        text=True,
+        cwd=PROJECT_FOLDER,
+    )
+
+    print(result.stdout)
+
+    if result.returncode != 0:
+        print(f"❌ {name} FAILED")
+        print(result.stderr)
+        return False
+
+    if "All checks passed." not in result.stdout:
+        print(
+            "❌ JSON validation did not report "
+            "successful completion."
+        )
+        return False
+
+    print(f"✅ {name} PASSED")
+    return True
+
+
+def run_summary_generation():
+    name = "Markdown Summary Generation"
+
+    print(f"\n{'=' * 60}")
+    print(f"TEST: {name}")
+    print(f"{'=' * 60}")
+
+    command = [
+        sys.executable,
+        str(
+            PROJECT_FOLDER
+            / "generate_summary.py"
+        ),
+    ]
+
+    result = subprocess.run(
+        command,
+        capture_output=True,
+        text=True,
+        cwd=PROJECT_FOLDER,
+    )
+
+    print(result.stdout)
+
+    if result.returncode != 0:
+        print(f"❌ {name} FAILED")
+        print(result.stderr)
+        return False
+
+    if (
+        "Summary generated successfully:"
+        not in result.stdout
+    ):
+        print(
+            "❌ Summary generation did not report "
+            "successful completion."
+        )
+        return False
+
+    print(f"✅ {name} PASSED")
+    return True
+
+
+def run_summary_validation():
+    name = "Markdown Summary Validation"
+
+    print(f"\n{'=' * 60}")
+    print(f"TEST: {name}")
+    print(f"{'=' * 60}")
+
+    command = [
+        sys.executable,
+        str(
+            PROJECT_FOLDER
+            / "tests"
+            / "validate_summary.py"
+        ),
+    ]
+
+    result = subprocess.run(
+        command,
+        capture_output=True,
+        text=True,
+        cwd=PROJECT_FOLDER,
+    )
+
+    print(result.stdout)
+
+    if result.returncode != 0:
+        print(f"❌ {name} FAILED")
+        print(result.stderr)
+        return False
+
+    if "All checks passed." not in result.stdout:
+        print(
+            "❌ Markdown summary validation did not "
+            "report successful completion."
+        )
+        return False
 
     print(f"✅ {name} PASSED")
     return True
@@ -52,6 +177,7 @@ def main():
             [
                 "Atomic changes: 0",
                 "Logical change groups: 0",
+                "Types: 0 replacements, 0 deletions, 0 insertions",
                 "No text changes found.",
             ],
         ),
@@ -61,6 +187,7 @@ def main():
             "tests/test_word_new.pdf",
             [
                 "Atomic changes: 2",
+                "Logical change groups: 1",
                 "Types: 2 replacements, 0 deletions, 0 insertions",
                 "Replace: 'technical' -> 'documentation'",
                 "Replace: 'writer.' -> 'engineer.'",
@@ -126,16 +253,27 @@ def main():
         if run_test(*test):
             passed += 1
 
+    if run_json_validation():
+        passed += 1
+
+    if run_summary_generation():
+        passed += 1
+
+    if run_summary_validation():
+        passed += 1
+
+    total_tests = len(tests) + 3
+
     print(f"\n{'=' * 60}")
     print("TEST SUMMARY")
     print(f"{'=' * 60}")
-    print(f"Passed: {passed}/{len(tests)}")
+    print(f"Passed: {passed}/{total_tests}")
 
-    if passed == len(tests):
+    if passed == total_tests:
         print("🎉 ALL TESTS PASSED!")
         return 0
 
-    print("❌ SOME TESTS FAILED.")
+    print("❌ SOME TESTS FAILED")
     return 1
 
 
