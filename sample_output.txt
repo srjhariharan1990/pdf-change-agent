@@ -1,0 +1,103 @@
+PDF TEXT COMPARISON
+Old PDF: old.pdf (376 tokens)
+New PDF: new.pdf (379 tokens)
+Atomic changes: 13
+Logical change groups: 7
+Types: 7 replacements, 3 deletions, 3 insertions
+
+========================================================================
+CHANGE GROUP 1
+Pages: old 1; new 1
+
+OLD CONTEXT:
+usability and customer satisfaction while growing as a valuable documentation professional within the organization. Skills & Tools Writing and Reviewing Skills: • Experience in
+
+NEW CONTEXT:
+usability and customer satisfaction while growing as a valuable documentation professional. Skills & Tools Writing and Reviewing Skills: • Experience in
+
+ATOMIC CHANGES:
+  Replace: 'professional' -> 'professional.'
+  Delete:  'within the organization.'
+
+========================================================================
+CHANGE GROUP 2
+Pages: old 1; new 1
+
+OLD CONTEXT:
+writing end-user documentation such as User Manuals, Maintenance Manuals, Installation Guides. • Ability to organize, develop, edit, and maintain structured documentation
+
+NEW CONTEXT:
+writing end-user documentation such as User Manuals, Maintenance Manuals, Installation Guides, and Online Help content. • Ability to organize, develop, edit, and maintain structured documentation
+
+ATOMIC CHANGES:
+  Replace: 'Guides.' -> 'Guides,'
+  Insert:  'and Online Help content.'
+
+========================================================================
+CHANGE GROUP 3
+Pages: old 1; new 1
+
+OLD CONTEXT:
+topic-based content using XML for modular documentation and content reuse. • Experience in proofreading content to ensure accuracy, clarity, consistency, and
+
+NEW CONTEXT:
+topic-based content using XML for modular documentation and content reuse. Experience in proofreading content to ensure accuracy, clarity, consistency, and
+
+ATOMIC CHANGES:
+  Delete:  '•'
+
+========================================================================
+CHANGE GROUP 4
+Pages: old 1; new 1
+
+OLD CONTEXT:
+consistency, and adherence to style guidelines. • Followed Microsoft Style Guide and Simplified Technical English (STE) standards while creating and reviewing
+
+NEW CONTEXT:
+consistency, and adherence to style guidelines. • Followed Microsoft Style Guide, and Simplified Technical English (STE) standards while creating and reviewing
+
+ATOMIC CHANGES:
+  Replace: 'Guide' -> 'Guide,'
+
+========================================================================
+CHANGE GROUP 5
+Pages: old 1; new 1
+
+OLD CONTEXT:
+understanding and usability. Tools & Platforms: Adobe FrameMaker, Microsoft Word, and InDesign. Web Technologies: HTML5, CSS3, JavaScript (basic). Documentation Standards: Microsoft
+
+NEW CONTEXT:
+understanding and usability. Tools & Platforms: Adobe FrameMaker, Microsoft Word, JIRA, Snagit, InDesign. Web Technologies: HTML5, CSS3, JavaScript (basic). Documentation Standards: Microsoft
+
+ATOMIC CHANGES:
+  Delete:  'and'
+  Insert:  'JIRA, Snagit,'
+
+========================================================================
+CHANGE GROUP 6
+Pages: old 1; new 2
+
+OLD CONTEXT:
+Technical Writer Knowledgeworks Innovative Linguistic Solutions., Bangalore Project: Royal Enfield May 2023 - November 2025 (2+ years) • Authored and managed structured documentation
+
+NEW CONTEXT:
+Technical Writer Knowledgeworks Innovative Linguistic Solutions., Bangalore Project: Royal Enfield user manuals May 2023 – November 2025 (2+ years) • Authored and managed structured documentation
+
+ATOMIC CHANGES:
+  Insert:  'user manuals'
+  Replace: '-' -> '–'
+
+========================================================================
+CHANGE GROUP 7
+Pages: old 1, 2; new 2
+
+OLD CONTEXT:
+of Engineering (B.E.), Computer Science Engineering • Anna University, Chennai - 2009 - 2013 Certifications • Certificate in Technical Writing - TechTotal • Web Development Foundations DECLARATION I hereby declare that
+
+NEW CONTEXT:
+of Engineering (B.E.), Computer Science Engineering • Anna University, Chennai — 2009 – 2013 Certifications • Certificate in Technical Writing – TechTotal • Web Development Foundations DECLARATION I hereby declare that
+
+ATOMIC CHANGES:
+  Replace: '-' -> '—'
+  Replace: '-' -> '–'
+  Replace: '-' -> '–'
