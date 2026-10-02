@@ -1,0 +1,19 @@
+# Python virtual environment
+.venv/
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# VS Code settings
+.vscode/
+
+# Generated test PDFs
+tests/*.pdf
+
+# Local/private PDF files
+old.pdf
+new.pdf
+
+# Local backup files
+main_working_backup.py
