@@ -8,8 +8,8 @@ This project is designed to help technical writers, documentation engineers, QA 
 
 The PDF Change Agent compares:
 
-- An **old PDF** — the previous version of a document
-- A **new PDF** — the updated version
+- **Old PDF** — the previous version of a document
+- **New PDF** — the updated version
 
 It identifies:
 
@@ -173,36 +173,21 @@ Generate human-readable report
 ```text
 pdf-change-agent/
 │
-├── .venv/
-│   └── Python virtual environment
-│
 ├── tests/
 │   ├── create_test_word_change.py
 │   ├── create_test_insertion.py
 │   ├── create_test_deletion.py
 │   ├── create_test_punctuation.py
 │   ├── create_test_symbol.py
-│   ├── run_tests.py
-│   │
-│   ├── test_same_old.pdf
-│   ├── test_same_new.pdf
-│   ├── test_word_old.pdf
-│   ├── test_word_new.pdf
-│   ├── test_insertion_old.pdf
-│   ├── test_insertion_new.pdf
-│   ├── test_deletion_old.pdf
-│   ├── test_deletion_new.pdf
-│   ├── test_punctuation_old.pdf
-│   ├── test_punctuation_new.pdf
-│   ├── test_symbol_old.pdf
-│   └── test_symbol_new.pdf
+│   └── run_tests.py
 │
+├── .gitignore
+├── README.md
 ├── main.py
-├── main_working_backup.py
-├── old.pdf
-├── new.pdf
-└── README.md
+└── requirements.txt
 ```
+
+Local files such as `.venv/`, `old.pdf`, `new.pdf`, generated test PDFs, and backup files are excluded from the GitHub repository through `.gitignore`.
 
 ## Requirements
 
@@ -216,6 +201,8 @@ Create and activate a Python virtual environment.
 
 ### Windows PowerShell
 
+Create the virtual environment:
+
 ```powershell
 python -m venv .venv
 ```
@@ -224,16 +211,13 @@ Activate it:
 
 ```powershell
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
-```
-
-```powershell
 .venv\Scripts\Activate.ps1
 ```
 
-Install PyMuPDF:
+Install the project dependencies:
 
 ```powershell
-pip install pymupdf
+pip install -r requirements.txt
 ```
 
 ## Run the PDF Comparison
